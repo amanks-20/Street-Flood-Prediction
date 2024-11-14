@@ -1,39 +1,62 @@
-# Street Flood Prediction
+# Street Flood Prediction Modelling
 
-This repository contains the code and data for predicting street-level flooding in urban areas using machine learning. The project utilizes a Random Forest regression model to forecast hourly water depth on streets during storm events based on topographic and environmental features.
+**Course**: CE784A - Machine Learning and Data Analytics for Civil Engineering Applications  
+**Instructor**: Prof. Pranamesh Chakraborty  
+**Semester**: 2024-25 (I)  
+**Group Name**: Fluvial Prognosticators  
+
+**Authors**:  
+- Aman Kumar Singh  
+- Om Jee  
+- Khushbu  
 
 ## Project Overview
 
-Urban flooding is a critical challenge in densely populated areas. Traditional flood prediction models are computationally intensive and may not be feasible for real-time applications. This project explores a machine learning-based surrogate model to provide accurate and efficient flood predictions, enabling quicker responses and better management of urban flood risks.
+This project applies machine learning to predict street-level flooding in urban areas using a Random Forest regression model. The model leverages key topographic and environmental features to forecast hourly water depth during storm events, aiming for real-time flood management support.
 
-## Model
+**Key Features Used**:
+- Topographic: Elevation, Depth to Water (DTW), Topographic Wetness Index (TWI)
+- Environmental: Cumulative rainfall metrics and temporal rainfall intensity
 
-The project leverages a Random Forest regression model, which is suitable for handling non-linear relationships and feature importance analysis. The model uses a combination of topographic and environmental variables:
-
-- **Topographic Features**: Elevation, Depth to Water (DTW), and Topographic Wetness Index (TWI)
-- **Environmental Features**: Rainfall metrics over varying time intervals
-
-The model achieved high accuracy, with an R² of 0.9977 on the training set and 0.9463 on the testing set, indicating its robustness and suitability for real-time urban flood forecasting.
+The model demonstrates high predictive accuracy with training R² = 0.9977 and testing R² = 0.9463, showing potential as an efficient alternative to traditional hydrodynamic flood models.
 
 ## Repository Structure
 
-- `events/` - Contains the event-based data files used for model training and testing.
-- `oldfiles/` - Archive of previous files and versions.
-- `test/` - Test data for model validation.
-- `main.ipynb` - The main Jupyter notebook with the code for data preprocessing, model training, and evaluation.
-- `LICENSE` - License file (MIT License).
-- `README.md` - Overview and instructions for the project.
+├── events/                   # Event data files for training/testing
+├── test/                     # Test data for evaluation
+├── LICENSE                   # License details
+├── README.md                 # Project overview and instructions
+├── main.ipynb                # Main Jupyter Notebook for model training and evaluation
+├── requirements.txt          # List of dependencies
+└── scripts/                  # Custom scripts for data prep and training
 
-## Installation and Requirements
+## Installation
 
-To run the code, make sure you have Python 3.x installed along with the following packages:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/amanks-20/Street-Flood-Prediction.git
+   cd Street-Flood-Prediction
 
-- `pandas`
-- `numpy`
-- `scikit-learn`
-- `matplotlib`
-- `seaborn`
-  
-Install dependencies using:
-```bash
+	2.	Install dependencies:
+
 pip install -r requirements.txt
+
+
+
+Usage
+
+	1.	Run the Jupyter Notebook:
+Open main.ipynb to see the complete workflow, including data loading, preprocessing, model training, and evaluation.
+	2.	Evaluate Results:
+The model outputs R² and RMSE scores and provides feature importance rankings, demonstrating the influence of topographic and environmental factors on flood predictions.
+
+Results
+
+	•	Training R²: 0.9977
+	•	Testing R²: 0.9463
+
+These metrics confirm the model’s robustness and suitability for urban flood prediction, offering a practical tool for real-time applications.
+
+Contribution
+
+This project was collaboratively developed by Aman Kumar Singh, Om Jee, and Khushbu as part of the CE784A course.
