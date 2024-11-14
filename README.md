@@ -42,6 +42,7 @@ The model outputs R² and RMSE scores and provides feature importance rankings, 
 Results
 
 •	Training R²: 0.9977
+
 •	Testing R²: 0.9463
 
 These metrics confirm the model’s robustness and suitability for urban flood prediction, offering a practical tool for real-time applications.
