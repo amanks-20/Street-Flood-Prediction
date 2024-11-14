@@ -20,16 +20,6 @@ This project applies machine learning to predict street-level flooding in urban 
 
 The model demonstrates high predictive accuracy with training R² = 0.9977 and testing R² = 0.9463, showing potential as an efficient alternative to traditional hydrodynamic flood models.
 
-## Repository Structure
-
-├── events/                   # Event data files for training/testing
-├── test/                     # Test data for evaluation
-├── LICENSE                   # License details
-├── README.md                 # Project overview and instructions
-├── main.ipynb                # Main Jupyter Notebook for model training and evaluation
-├── requirements.txt          # List of dependencies
-└── scripts/                  # Custom scripts for data prep and training
-
 ## Installation
 
 1. **Clone the repository**:
@@ -37,23 +27,22 @@ The model demonstrates high predictive accuracy with training R² = 0.9977 and t
    git clone https://github.com/amanks-20/Street-Flood-Prediction.git
    cd Street-Flood-Prediction
 
-	2.	Install dependencies:
+2. **Install dependencies:**
 
 pip install -r requirements.txt
 
 
-
 Usage
 
-	1.	Run the Jupyter Notebook:
+1.	Run the Jupyter Notebook:
 Open main.ipynb to see the complete workflow, including data loading, preprocessing, model training, and evaluation.
-	2.	Evaluate Results:
+2.	Evaluate Results:
 The model outputs R² and RMSE scores and provides feature importance rankings, demonstrating the influence of topographic and environmental factors on flood predictions.
 
 Results
 
-	•	Training R²: 0.9977
-	•	Testing R²: 0.9463
+•	Training R²: 0.9977
+•	Testing R²: 0.9463
 
 These metrics confirm the model’s robustness and suitability for urban flood prediction, offering a practical tool for real-time applications.
 
