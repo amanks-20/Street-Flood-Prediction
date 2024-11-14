@@ -20,26 +20,6 @@ This project uses a Random Forest regression model to predict street-level flood
 
 Model accuracy: **Training R² = 0.9977**, **Testing R² = 0.9463**.
 
-## Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/amanks-20/Street-Flood-Prediction.git
-   cd Street-Flood-Prediction
-
-2.	Install dependencies:
-
-pip install -r requirements.txt
-
-
-**Usage**
-
-	1.	Run the Notebook:
-Open main.ipynb to view data processing, model training, and evaluation.
-	2.	Results:
-	•	Training R²: 0.9977
-	•	Testing R²: 0.9463
-
 **Contribution**
 
 Developed by Aman Kumar Singh, Om Jee, and Khushbu for the CE784A course.
